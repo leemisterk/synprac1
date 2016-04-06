@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'database'  =>  'SynPracDB1',
-            'username'  => 'forge',
-            'password'  => '6My6IKoSGNaQGvbpW1Ti',
+            'host'      => env('DB_HOST','localhost'),
+            'database'  => env('DB_DATABASE', 'SynPracDB1'),
+            'username'  => env('DB_USERNAME','forge'),
+            'password'  => env('DB_PASSWORD',''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
